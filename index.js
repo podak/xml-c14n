@@ -1,4 +1,5 @@
 var ExclusiveCanonicalisation = require("./lib/algorithm/exclusive-canonicalisation");
+var C14nCanonicalization = require("./lib/algorithm/c14n-canonicalisation");
 
 var builtIn = {
   algorithms: {
@@ -10,6 +11,12 @@ var builtIn = {
       options.includeComments = true;
       return new ExclusiveCanonicalisation(options);
     },
+    "http://www.w3.org/TR/2001/REC-xml-c14n-20010315": function() {
+      return new C14nCanonicalization();
+    },
+    "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments": function() {
+      return new C14nCanonicalizationWithComments();
+    }
   },
 };
 

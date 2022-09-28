@@ -17,6 +17,8 @@ This module was originally adapted from some code in [xml-crypto](https://github
 by Yaron Naveh, and as such is also covered by any additional conditions in the
 license of that codebase (which just so happens to be the MIT license).
 
+This fork introduces the compatibility for http://www.w3.org/TR/2001/REC-xml-c14n-20010315 canonicali(z|s)ation.
+
 Apology
 -------
 
