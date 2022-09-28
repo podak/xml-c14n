@@ -17,6 +17,9 @@
     "exc-c14n",
     "exclusive"
   ],
+  "dependencies": {
+    "xpath": "0.0.27"
+  },
   "author": "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)",
   "license": "BSD"
 }
